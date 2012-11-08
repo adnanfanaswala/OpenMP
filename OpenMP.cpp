@@ -1,3 +1,11 @@
+/*
+#-------------------------------------------------------------------------------
+# Author: Adnan Fanaswala
+# Created: 8th November 2012
+# The code helps test OpenMP functionality with Visual Studio.
+#-------------------------------------------------------------------------------
+*/
+
 #include <omp.h>
 #include <iostream>
 #include <Windows.h>
