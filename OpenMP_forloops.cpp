@@ -52,9 +52,9 @@ int main(int argc, char* argv[])
 int sumSequential = 0;
 
 	StartCounter(); // This starts the timer
-	for(int x=0; x < 1000; x++)
+	for(int x=0; x < 100000; x++)
 	{
-		for(int y=0; y < 1000; y++)
+		for(int y=0; y < 100000; y++)
 		{
 		sumSequential = sumSequential + x + y;
 		}
@@ -69,9 +69,9 @@ int sumParallel = 0;
 StartCounter(); // This starts the timer
 
 #pragma omp parallel for reduction(+:sumParallel)
-	for(int x=0; x < 1000; x++)
+	for(int x=0; x < 100000; x++)
 	{
-		for(int y=0; y < 1000; y++)
+		for(int y=0; y < 100000; y++)
 		{
 		sumParallel = sumParallel + x + y;
 		}
